@@ -21,7 +21,6 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-
 /* Clases generales repetidas*/
 
 .login {
@@ -39,10 +38,12 @@ body {
     display: none;
 }
 
+
 .form-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    justify-items: center;
 }
 
 .title {
@@ -85,33 +86,35 @@ body {
 
 .login-button {
     margin-top: 24px;
+    margin-bottom: 16px;
 }
 
-/* New Password */
+/* Email send */
 
-
-
-
-
-.form {
-    display: flex;
-    flex-direction: column;
-}
-
-.label {
-    font-size: var(--sm);
-    font-weight: bold;
-    margin-bottom: 4px;
-}
-
-.input {
+.email-img {
+    width: 140px;
+    height: 140px;
     background-color: var(--text-input-field);
-    border: none;
-    border-radius: 8px;
-    height: 36px;
-    font-size: var(--md);
-    padding: 6px;
-    margin-bottom: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.email-img img {
+    width: 80px;
+}
+
+.resend {
+    font-size: var(--sm);
+}
+.resend span {
+    color: var(--very-light-pink);
+}
+.resend a {
+    color: var(--hospital-green);
+    text-decoration: none;
 }
 
 /* Medias */
@@ -121,4 +124,3 @@ body {
         display: block;
     }
 }
-

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/emailsend.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
@@ -16,26 +16,22 @@
             <img src="/logos/logo_yard_sale.svg" alt="logo" class="logo">
 
             <h1 class="title">
-                Create a new password
+                Email has been sent!
             </h1>
 
             <p class="subtitle">
-                Enter a new password for you account
+                Please check your imbox for instructions on how to reset the password
             </p>
 
-            <form action="/" class="form">
-                <label for="password" class="label">
-                    password
-                </label>
-                <input type="password" id="password" placeholder="**********" class="input input-password">
+            <div class="email-img">
+                <img src="/icons/email.svg" alt="email-icon">
+            </div>
 
-                <label for="new-password" class="label">
-                    confirm your password
-                </label>
-                <input type="password" id="new-password" placeholder="**********" class="input input-password">
-
-                <input type="submit" value="Confirm" class="prymary-button login-button">
-            </form>
+            <button class="prymary-button login-button">Login</button>
+            <p class="resend">
+                <span>Didn't recive the email?</span>
+                <a href="/">Resend</a>
+            </p>
 
         </div>
 

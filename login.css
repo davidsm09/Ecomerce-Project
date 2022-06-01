@@ -21,7 +21,6 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-
 /* Clases generales repetidas*/
 
 .login {
@@ -39,26 +38,13 @@ body {
     display: none;
 }
 
+
 .form-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
 }
 
-.title {
-    font-size: var(--lg);
-    margin-bottom: 12px;
-    text-align: center;
-}
-
-.subtitle {
-    color: var(--very-light-pink);
-    font-size: var(--sm);
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 40px;
-    text-align: center;
-}
 
 .prymary-button {
     background-color: var(--hospital-green);
@@ -85,13 +71,10 @@ body {
 
 .login-button {
     margin-top: 24px;
+    margin-bottom: 16px;
 }
 
-/* New Password */
-
-
-
-
+/* login page */
 
 .form {
     display: flex;
@@ -113,12 +96,59 @@ body {
     padding: 6px;
     margin-bottom: 18px;
 }
+.input-email {
+    margin-bottom: 22px; 
+}
 
-/* Medias */
+.form a {
+    color: var(--hospital-green);
+    text-decoration: none;
+    font-size: var(--sm);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.secundary-button {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: solid 2px var(--hospital-green);
+    color: var(--hospital-green);
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.secundary-button:hover {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+
 
 @media (max-width: 640px) {
     .logo { 
         display: block;
     }
-}
 
+    .secundary-button {
+        position: absolute;
+        bottom: 0;
+        width: inherit;
+        margin-bottom: 20px;
+    }
+    .secundary-button:hover {
+        position: absolute;
+        bottom: 0;
+        width: inherit;
+        margin-bottom: 20px;
+    }
+}
